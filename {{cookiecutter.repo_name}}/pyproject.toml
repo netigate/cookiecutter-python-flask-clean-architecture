@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "{{repo_name}}"
+version = "0.1.0"
+description = ""
+authors = ["Netigate"]
+readme = "README.md"
+packages = []
+
+[tool.poetry.dependencies]
+Flask==2.2.2
+Flask-SQLAlchemy==3.0.3
+Flask-Migrate==2.6.0
+Flask-Cors==3.0.8
+psycopg2==2.9.5
+itsdangerous==1.1.0
+Werkzeug~=1.0.1
+Jinja2<3.1
+alembic~=1.8.1
+gunicorn==20.1.0
+dependency-injector==4.40.0
+python-dotenv==0.21.0
+marshmallow==3.5.0
+
+[tool.poetry.group.test.dependencies]
+Flask-Testing==0.8.1
+testcontainers==3.7.0
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
